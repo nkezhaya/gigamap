@@ -81,7 +81,7 @@ function Pen(map) {
             var data = "";
             var paths = this.polygon.getPlots();
             paths.getAt(0).forEach(function (value, index) {
-                data += (value.toString());
+                data += "[" + value.e + ", " + value.d + "],<br>";
             });
             return data;
         } else {
