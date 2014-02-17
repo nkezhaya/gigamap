@@ -17,6 +17,9 @@ if (typeof Gigabit !== "object") {
 
             map = new google.maps.Map(document.getElementById("map-canvas"),
                 mapOptions);
+
+            map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(
+              document.getElementById("legend"));
         };
 
     $.getJSON("neighborhoods.json", function (data) {

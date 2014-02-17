@@ -14,6 +14,16 @@
       .info {
           height: 20px;
       }
+
+      #legend {
+          background: white;
+          padding: 10px;
+          font-size: 18px;
+      }
+
+      .grande { color: #FCB933; }
+      .att { color: #FF7400; }
+      .both { color: #0ACF80; }
     </style>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOEfp-O1f8ErW1yPNbb__Fce5V_NSWym8&sensor=false&libraries=geometry"></script>
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
@@ -21,5 +31,12 @@
   </head>
   <body>
     <div id="map-canvas"></div>
+    <div id="legend">
+        <span class="grande">Grande</span>
+        <br />
+        <span class="att">AT&amp;T</span>
+        <br />
+        <span class="both">Both</span>
+    </div>
   </body>
 </html>
