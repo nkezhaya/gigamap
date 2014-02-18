@@ -1,9 +1,3 @@
-var Gigabit;
-
-if (typeof Gigabit !== "object") {
-    Gigabit = {};
-}
-
 (function () {
     "use strict";
 
