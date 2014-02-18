@@ -17,15 +17,12 @@
         };
 
     $.getJSON("neighborhoods.json", function (data) {
-        var bounds,
-            color,
-            coords,
-            info,
-            polygon;
-
         $.each(data.neighborhoods, function (i, hood) {
-            coords = [];
-            bounds = new google.maps.LatLngBounds();
+            var bounds = new google.maps.LatLngBounds(),
+                color,
+                coords = [],
+                info,
+                polygon;
 
             $.each(hood.coords, function (j, coord) {
                 var latlng = new google.maps.LatLng(coord[1], coord[0]);
