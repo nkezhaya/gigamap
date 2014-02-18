@@ -58,12 +58,14 @@ if (typeof Gigabit !== "object") {
 
             polygon.setMap(map);
 
-            info = new google.maps.InfoWindow({
-                content: "<div class='info'>" + hood.label + "</div>",
-                position: bounds.getCenter()
-            });
+            if (hood.label) {
+                info = new google.maps.InfoWindow({
+                    content: "<div class='info'>" + hood.label + "</div>",
+                    position: bounds.getCenter()
+                });
 
-            info.open(map);
+                info.open(map);
+            }
         });
     });
 
